@@ -16,14 +16,16 @@ model fitting and after-fitting functions.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-drc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-drc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-drc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-drc-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-drc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-drc-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-drc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-drc-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-drc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-drc-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-drc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-drc-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-drc/badges/version.svg)](https://anaconda.org/conda-forge/r-drc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-drc/badges/downloads.svg)](https://anaconda.org/conda-forge/r-drc)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--drc-green.svg)](https://anaconda.org/conda-forge/r-drc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-drc.svg)](https://anaconda.org/conda-forge/r-drc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-drc.svg)](https://anaconda.org/conda-forge/r-drc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-drc.svg)](https://anaconda.org/conda-forge/r-drc) |
 
 Installing r-drc
 ================
@@ -58,13 +60,13 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](http://www.appveyor.com/)
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
 and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](http://docs.anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
-[conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
+[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
@@ -100,7 +102,7 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
