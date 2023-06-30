@@ -1,11 +1,11 @@
-About r-drc
-===========
+About r-drc-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cran.r-project.org/web/packages/drc/index.html
 
 Package license: GPL-2
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Analysis of dose-response data is made available through a suite of flexible and versatile
 model fitting and after-fitting functions.
